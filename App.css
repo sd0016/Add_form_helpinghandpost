@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+
+.tab{
+  background-color: aquamarine;
+  /* text-align: center; */
+  border: 2px;
+  margin-left: 10px;
+}
+
+.radiobtn{
+  width:25px;
+  height: 25px;
+  margin-left: 5px;  
+  margin-right: 2px;
+  align-self: baseline;
+  display: inline;
+}
+
+.label{
+  background-color: rgb(99, 3, 78);
+  border-radius: 20px;
+  /* text-align:center; */
+  color: white;
+  height: 35px;
+  width:fit-content;
+  margin-left: 5px;
+
+}
+.label1{
+  width: 80px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(99, 3, 78);
+  color: white;
+}
+input.radiobtn{
+ color: red !important ;
+
+}
