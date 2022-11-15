@@ -1,42 +1,76 @@
-.App {
-  text-align: center;
+.container{
+  height: 10vh;
+  display: inline-block;
+  /* margin-left: 2px; */
 }
 
-
-.tab{
-  background-color: aquamarine;
-  /* text-align: center; */
-  border: 2px;
-  margin-left: 10px;
+input[type="radio"]{
+  display: none;
 }
 
-.radiobtn{
-  width:25px;
-  height: 25px;
-  margin-left: 5px;  
-  margin-right: 2px;
-  align-self: baseline;
-  display: inline;
+label{
+  cursor: pointer;
+  font-weight: 500;
+  /* margin-bottom: 10px; */
 }
 
-.label{
-  background-color: rgb(99, 3, 78);
+label span{
+  display: inline-flex;
+  padding: 10px 20px 10px 10px;
   border-radius: 20px;
-  /* text-align:center; */
-  color: white;
-  height: 35px;
-  width:fit-content;
-  margin-left: 5px;
-
+  transition: 2s;
+  background-color: rgb(193,188,188);
 }
-.label1{
-  width: 80px;
-  text-align: center;
-  border-radius: 20px;
-  background-color: rgb(99, 3, 78);
-  color: white;
-}
-input.radiobtn{
- color: red !important ;
 
+label span:hover,
+  input[type="radio"]:checked+span{
+   background-color: rgb(85,8,90);
+   color:aliceblue;
+  }
+
+  .r4{
+    margin-left: 10px;
+  }
+  
+  .wearing-cloths{
+    margin-top: 10px;
+  }
+  
+  #text-color{
+    margin-top: 5px;
+    margin-left: 50px;
+    background-color: rgb(108, 11, 115);
+    color: white;
+  }
+
+label span::before{
+  content: "";
+  /* width: 20px;
+  height: 20px; */
+  border-radius: 10%;
+  margin-right: 10px;
+  padding-left: 5px;
+  transition: 15s ease;
+}
+
+.radio-custom-label{
+  position: relative;
+}
+
+.radio-custom{
+  opacity: 0;
+  position: absolute;
+}
+
+input:checked
+~.radio-custom-label::after{
+  content: "\2713";
+  color: rgb(253,249,253);
+  position:fixed;
+  font-size: 15px;
+  /* padding-left: 1px; */
+}
+
+.fetch-loc{
+  color: rgb(108, 11, 115);
 }
